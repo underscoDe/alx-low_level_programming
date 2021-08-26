@@ -2,9 +2,7 @@
 
 
 /**
- * First low level programming project
- *
- * main: This is the entry point of the project
+ * main - This is the entry point of the project
  *
  * Return: always 0
  */
