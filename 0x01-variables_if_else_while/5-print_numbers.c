@@ -13,7 +13,7 @@ int main(void)
 
 	for (n = 0; n < 10; ++n)
 	{
-		printf("%n\n");
+		printf("%d", n);
 	}
 	return (0);
 }
