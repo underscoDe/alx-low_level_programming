@@ -1,21 +1,18 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * main - Entry point, prints ""Holberton" to the standard output
- *
- * Return: Always 0
- */
+*main - function prints text as output
+*
+*Return:return 0
+*/
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
-	_putchar(10);
-	return (0);
+char school[10] = "_putchar";
+int i;
+for (i = 0; i < 8; i++)
+{
+_putchar(school[i]);
+}
+_putchar(10);
+return (0);
 }
