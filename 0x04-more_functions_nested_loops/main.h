@@ -7,7 +7,6 @@
 *int protoypes (int)
 */
 
-
-int _isdigit(int);
+int _isdigit(int c);
 
 #endif /* MAIN_H */
