@@ -13,3 +13,4 @@ algorithm section .
 * [0x02. C - Functions_nested_loops](./0x02-functions_nested_loops)
 * [0x03. C - Debugging](./0x03-debugging)
 * [0x04. C - More functions, nested loops](./0x04-more_functions_nested_loops)
+* [0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings)
