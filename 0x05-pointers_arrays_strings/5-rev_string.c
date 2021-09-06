@@ -5,13 +5,8 @@
 * rev_string - Reverses a string
 * @s: string to be reversed
 *
-* _strlen: returns the length of a string
-* @s: string
-*
 * Return: nothing
 */
-
-int _strlen(char *s);
 
 void rev_string(char *s)
 {
@@ -24,6 +19,13 @@ void rev_string(char *s)
 		*(s + len - i - 1) = tmp;
 	}
 }
+
+/**
+* _strlen: returns the length of a string
+* @s: string
+*
+* Return: the length of the given string
+*/
 
 int _strlen(char *s)
 {
