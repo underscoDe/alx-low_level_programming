@@ -4,10 +4,9 @@
 /**
 *rev_string - Reverses a string
 *@s: string to be reversed
-*Return: Nothing
-*_strlen - returns the length of a string
+*_strlen: returns the length of a string
 *@s: string
-*Return: the length of the given string
+*Return: nothing
 */
 
 int _strlen(char *s);
