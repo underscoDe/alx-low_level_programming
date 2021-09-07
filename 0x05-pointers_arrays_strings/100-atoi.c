@@ -27,7 +27,10 @@ int _atoi(char *str)
 {
 	int sign = 1, base = 0, i = 0, comp = INT_MAX / 10;
 
-	while (*(str + i) == ' ' || !_isdigit(*(str + i + 1)))
+	while (*(str + i) == ' ')
+		i++;
+
+	while(!_isdigit(*(str + i + 1)))
 		i++;
 
 	if (*(str + i) == '-' || *(str + i) == '+')
