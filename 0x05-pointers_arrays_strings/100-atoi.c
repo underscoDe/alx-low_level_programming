@@ -1,52 +1,25 @@
-#include <limits.h>
 #include "main.h"
 
 /**
-* _isdigit - checks if a character is a digit
-* @c: character to check
+* _atoi - converts a string to an int
+* @s: the string to be changed
 *
-* Return: 1 whether it is, 0 otherwise
+* Return: the converted int
 */
 
-int _isdigit(char c)
+int _atoi(char *s)
 {
-	if ((c >= '0') && (c <= '9'))
-		return (1);
-	else
-		return (0);
-}
+	int i = 1;
+	unsigned int num = 0;
 
-/**
-* _atoi - Converts string to integer
-* @str: string to convert
-*
-* Return: the integer value of the given string
-*/
+	do {
+		if (*s == '-')
+			i *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = num * 10 + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
 
-int _atoi(char *str)
-{
-	int sign = 1, base = 0, i = 0, comp = INT_MAX / 10;
-
-	while (*(str + i) == ' ')
-		i++;
-
-	while(!_isdigit(*(str + i + 1)))
-		i++;
-
-	if (*(str + i) == '-' || *(str + i) == '+')
-		sign = 1 - 2 * (str[i++] == '-');
-
-	while (*(str + i) >= '0' && *(str + i) <= '9')
-	{
-		if (base > comp || (base == comp && *(str + i) - '0' > 7))
-		{
-			if (sign == 1)
-				return (INT_MAX);
-			else
-				return (INT_MIN);
-		}
-		base = 10 * base + (*(str + i++) - '0');
-	}
-
-	return (base * sign);
+	return (num * i);
 }
