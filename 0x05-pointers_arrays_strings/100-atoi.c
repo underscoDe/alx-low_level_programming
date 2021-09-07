@@ -8,6 +8,8 @@
 * Return: the integer value of the given string
 */
 
+int _isdigit(char c);
+
 int _atoi(char *str)
 {
 	int sign = 1, base = 0, i = 0, comp = INT_MAX / 10;
