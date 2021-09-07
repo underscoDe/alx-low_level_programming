@@ -2,13 +2,26 @@
 #include "main.h"
 
 /**
+* _isdigit - checks if a character is a digit
+* @c: character to check
+*
+* Return: 1 whether it is, 0 otherwise
+*/
+
+int _isdigit(char c)
+{
+	if ((c >= '0') && (c <= '9'))
+		return (1);
+	else
+		return (0);
+}
+
+/**
 * _atoi - Converts string to integer
 * @str: string to convert
 *
 * Return: the integer value of the given string
 */
-
-int _isdigit(char c);
 
 int _atoi(char *str)
 {
@@ -33,19 +46,4 @@ int _atoi(char *str)
 	}
 
 	return (base * sign);
-}
-
-/**
-* _isdigit - checks if a character is a digit
-* @c: character to check
-*
-* Return: 1 whether it is, 0 otherwise
-*/
-
-int _isdigit(char c)
-{
-	if ((c >= '0') && (c <= '9'))
-		return (1);
-	else
-		return (0);
 }
