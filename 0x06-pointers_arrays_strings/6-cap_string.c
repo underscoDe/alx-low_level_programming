@@ -1,32 +1,48 @@
 #include "main.h"
+
 /**
-*cap_string - function that capitalize first character of a word
-*@str: string to capitalize
-*Return:returns the capitalized string
-*/
+ * cap_string - capitalizes all words of a string
+ * @str: string to be capitalized
+ *
+ * Return: address to the string
+ */
+
 char *cap_string(char *str)
 {
-	int index = 0;
+	int i = 0;
 
-	while (str[++index])
+	if (str[i] >= 'a' && str[i] <= 'z')
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
-
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+		str[i] -= 32;
+		i++;
+	}
+	while (str[i] != '\0')
+	{
+		if (is_separator(str[i]) && (str[i + 1] >= 'a'
+						 && str[i + 1] <= 'z'))
+			str[i + 1] -= 32;
+		i++;
 	}
 	return (str);
+}
+
+/**
+ * is_separator - checks if a is a valid word separator
+ * @a: char to be checked
+ *
+ * Return: 1 if char is a separator, 0 otherwise
+ */
+
+int is_separator(char a)
+{
+	int i = 0, flag = 0;
+	char symbols[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(',
+				')', '{', '}'};
+
+	for (; i < 13; i++)
+	{
+		if (a == symbols[i])
+			flag = 1;
+	}
+	return (flag);
 }
