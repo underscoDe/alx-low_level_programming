@@ -25,10 +25,6 @@ int _strlen(char *s)
 char *cap_string(char *str)
 {
 	int index = 0;
-	char *empty = "";
-
-	if (_strlen(str) == 0)
-		return (empty);
 
 	while (str[++index])
 	{
@@ -50,6 +46,8 @@ char *cap_string(char *str)
 				str[index - 1] == '}')
 			str[index] -= 32;
 	}
+
+	str += '\0';
 
 	return (str);
 }
