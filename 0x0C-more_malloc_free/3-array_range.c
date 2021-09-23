@@ -4,7 +4,7 @@
 /**
  * array_range - creates an array of integers
  * @min: smallest number in the array
- * @max: lagrest value in the array
+ * @max: largest value in the array
  *
  * Return: pointer to the address of the memory block
  */
