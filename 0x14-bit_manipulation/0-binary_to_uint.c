@@ -17,6 +17,7 @@ int check_valid_string(const char *b)
 			return (0);
 		b++;
 	}
+
 	return (1);
 }
 
@@ -42,5 +43,6 @@ unsigned int binary_to_uint(const char *b)
 		base *= 2;
 		str_len--;
 	}
+
 	return (decimal);
 }
