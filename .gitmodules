@@ -1,3 +1,6 @@
 [submodule "printf"]
 	path = printf
 	url = https://github.com/Pericles001/printf.git
+[submodule "simple_shell"]
+	path = simple_shell
+	url = https://github.com/underscoDe/simple_shell.git
