@@ -8,9 +8,9 @@
  * Description: this is our custom random number generator
  *      for the make me win project task. We know that the
  *      gm program uses a random number generator then
- *      the C rand function (obviously ^^). We'll use
+ *      the C rand or srand function (obviously ^^). We'll use
  *      the LD_PRELOAD method to make the gm program
- *      use our rand function instead of C's
+ *      use our srand function instead of C's
  *
  */
 void srand(unsigned int seed)
