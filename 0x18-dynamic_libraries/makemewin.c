@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
- * rand - normally a random number generator
+ * srand - normally a random number generator
  *
  * Return: normally a random number
  * Description: this is our custom random number generator
@@ -15,7 +15,11 @@
  */
 void srand(unsigned int seed)
 {
-	printf("%d %d %d %d %d %d\n", 9, 8, 10, 24, 75, 9);
-	printf("Congratulations, you win the Jackpot!\n");
-	exit(1);
+	const char *nums_txt = "9 8 10 24 75 - 9\n";
+	const char *txt = "Congratulations, you win the Jackpot!\n";
+
+	(void)seed;
+	write(STDOUT_FILENO, (void *)nums_txt, 17);
+	write(STDOUT_FILENO, (void *)txt, 38);
+	exit(EXIT_SUCCESS);
 }
