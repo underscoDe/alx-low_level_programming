@@ -33,4 +33,4 @@ algorithm section .
 * [0x16. C - Simple Shell](https://github.com/underscoDe/simple_shell/tree/d4a98d6bff6e9c6bbcbfd808e5a7e2ddce21aeea)
 * [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists)
 * [0x18. C - Dynamic libraries](./0x18-dynamic_libraries)
-* [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/underscoDe/monty)
+* [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/underscoDe/monty/tree/c9ff8158e5909a65b1c166519adee641a1413be7)
