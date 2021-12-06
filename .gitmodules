@@ -4,3 +4,6 @@
 [submodule "simple_shell"]
 	path = simple_shell
 	url = https://github.com/underscoDe/simple_shell.git
+[submodule "monty"]
+	path = monty
+	url = https://github.com/underscoDe/monty
