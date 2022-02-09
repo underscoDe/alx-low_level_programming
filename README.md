@@ -34,3 +34,6 @@ algorithm section .
 * [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists)
 * [0x18. C - Dynamic libraries](./0x18-dynamic_libraries)
 * [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/underscoDe/monty/tree/c9ff8158e5909a65b1c166519adee641a1413be7)
+* [0x1A. C - Hashtables](./0x1A-hash_tables)
+* [0x1B. C - Sorting algorithms](./0x1B-sorting_algorithms)
+* [0x1C. C - Makefiles](./0x1C-makefiles)
