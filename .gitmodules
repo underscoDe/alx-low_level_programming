@@ -7,3 +7,6 @@
 [submodule "monty"]
 	path = monty
 	url = https://github.com/underscoDe/monty
+[submodule "binary_trees"]
+	path = binary_trees
+	url = https://github.com/underscoDe/binary_trees.git
