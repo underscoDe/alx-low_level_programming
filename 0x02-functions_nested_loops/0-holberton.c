@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.c>
 
 /**
 *main - function prints text as output
