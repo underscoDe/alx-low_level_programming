@@ -38,3 +38,4 @@ algorithm section .
 * [0x1B. C - Sorting algorithms](./0x1B-sorting_algorithms)
 * [0x1C. C - Makefiles](./0x1C-makefiles)
 * [0x1D. C - Binary trees](https://github.com/underscoDe/binary_trees/tree/33beed761dec7fa44fecb3ed60c3824d7957be1d)
+* [0x1E. C - Search Algorithms](./0x1E-search_algorithms)
