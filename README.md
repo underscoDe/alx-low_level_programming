@@ -35,7 +35,7 @@ algorithm section .
 * [0x18. C - Dynamic libraries](./0x18-dynamic_libraries)
 * [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/underscoDe/monty/tree/c9ff8158e5909a65b1c166519adee641a1413be7)
 * [0x1A. C - Hashtables](./0x1A-hash_tables)
-* [0x1B. C - Sorting algorithms](./0x1B-sorting_algorithms)
+* [0x1B. C - Sorting algorithms & Big O](https://github.com/underscoDe/sorting_algorithms/tree/68fd919071d2b0c469f275db74fa70e47ae4ab99)
 * [0x1C. C - Makefiles](./0x1C-makefiles)
 * [0x1D. C - Binary trees](https://github.com/underscoDe/binary_trees/tree/33beed761dec7fa44fecb3ed60c3824d7957be1d)
 * [0x1E. C - Search Algorithms](./0x1E-search_algorithms)
