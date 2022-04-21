@@ -10,3 +10,6 @@
 [submodule "binary_trees"]
 	path = binary_trees
 	url = https://github.com/underscoDe/binary_trees.git
+[submodule "sorting_algorithms"]
+	path = sorting_algorithms
+	url = https://github.com/underscoDe/sorting_algorithms.git
